@@ -1,5 +1,5 @@
 //baseOnePointURL = '/vzwallet/rest';
-baseOnePointURL = '/rest';
+baseOnePointURL = 'http://my-vzonepoint.rhcloud.com/rest';
 userName = '';
 sessionExpireCallBack = function() {
 	Ext.Msg.alert('One Point', 'Session has expired. Please Login', function() {
@@ -24,7 +24,7 @@ balAmountCheck = function() {
 }
 Ext.application({
 	name: 'wallet',
-	appFolder: 'res/scripts/app',
+	appFolder: 'http://my-vzonepoint.rhcloud.com/res/scripts/app',
 	requires: ['wallet.view.LoginView', 'wallet.view.DecisionView', 'wallet.view.CashView', 'wallet.view.AddPayeeView', 'wallet.view.BillPayView', 'wallet.view.LoyaltyView', 'wallet.view.StatementView'],
 	controllers: ['VZWalletController'],
 	launch: function() {
